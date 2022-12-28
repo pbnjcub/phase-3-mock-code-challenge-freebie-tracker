@@ -17,5 +17,15 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 # Create freebies Here
+# t.string :item_name
+# t.integer :value
+# t.integer :dev_id
+# t.integer :company_id
+
+Freebie.create(item_name: "cup", value: 5, dev_id: 3, company_id: 1)
+Freebie.create(item_name: "hat", value: 6, dev_id: 2, company_id: 2)
+Freebie.create(item_name: "bag", value: 9, dev_id: 1, company_id: 3)
+Freebie.create(item_name: "t-shirt", value: 7, dev_id: 3, company_id: 2)
+Freebie.create(item_name: "memory stick", value: 12, dev_id: 2, company_id: 1)
 
 puts "Seeding done!"
